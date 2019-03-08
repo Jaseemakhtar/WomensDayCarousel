@@ -1,0 +1,83 @@
+body{
+    background-image: linear-gradient(to right top, #ff00ea, #e000ef, #ba00f5, #8c00fa, #4000ff);
+    font-family: 'Montserrat', sans-serif;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+h4, h3{
+    text-align: center;
+    color: #fff;
+}
+.container{
+    width: 96%;
+    height: 76%;
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 6px 89px -37px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 89px -37px rgba(0,0,0,0.75);
+    box-shadow: 2px 6px 89px -37px rgba(0,0,0,0.75);
+    margin: 1em auto;
+}
+.footer{
+    color: #fff;
+    text-align: center;
+}
+.texts{
+    padding: .8em;
+    color: #fff;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.controls{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background: none;
+    border:none;
+    outline: none;
+}
+.controls img{
+    width: 1.8em;
+    height: 50px;
+    filter: invert(100%);
+}
+
+.pic{
+    animation-name: fadeIn;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.quote{
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+.hide{
+    display: none;
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(500px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
